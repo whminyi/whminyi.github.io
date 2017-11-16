@@ -250,8 +250,7 @@ npm i --registry=https://registry.npm.taobao.org
 <p>至此一个最简单的本地静态博客已经搭建完成，但是我们的目的肯定不是这么简单，当然是希望将博客内容异地托管然后外部也可以访问，那么久接着看</p>
 </li>
 </ul>
-<p>###2.绑定GitHub</p>
-<h4 id="配置GitHub公钥"><a href="#配置GitHub公钥" class="headerlink" title="配置GitHub公钥"></a>配置GitHub公钥</h4><p>  运行git bash，设置user.name 和 user.password配置信息：</p>
+<h3 id="2-绑定GitHub"><a href="#2-绑定GitHub" class="headerlink" title="2.绑定GitHub"></a>2.绑定GitHub</h3><h4 id="配置GitHub公钥"><a href="#配置GitHub公钥" class="headerlink" title="配置GitHub公钥"></a>配置GitHub公钥</h4><p>  运行git bash，设置user.name 和 user.password配置信息：</p>
 <pre><code>git config --global user.name &quot;你的GitHub用户名&quot;
 git config --global user.email &quot;你的GitHub注册邮箱&quot;
 </code></pre><p>  生成 SSH 秘钥文件：<br>    ssh-keygen -t rsa -C “你的GitHub注册邮箱”</p>
@@ -270,8 +269,7 @@ git config --global user.email &quot;你的GitHub注册邮箱&quot;
 <p>很多都是这个原因导致的，若hexo -d 命令后没有显示success提示，可检查是哪个选项后空格没有设置正确;</p>
 </li>
 </ul>
-<p>###3.内容创建及主题美化：</p>
-<h4 id="内容创建："><a href="#内容创建：" class="headerlink" title="内容创建："></a>内容创建：</h4><p>  在MyBlog目录下执行：hexo new “我的第一篇文章”，会在source-&gt;_posts文件夹内生成一个.md文件，接下来你可以参考markdown语法来生成自己的博客内容喽</p>
+<h3 id="3-内容创建及主题美化："><a href="#3-内容创建及主题美化：" class="headerlink" title="3.内容创建及主题美化："></a>3.内容创建及主题美化：</h3><h4 id="内容创建："><a href="#内容创建：" class="headerlink" title="内容创建："></a>内容创建：</h4><p>  在MyBlog目录下执行：hexo new “我的第一篇文章”，会在source-&gt;_posts文件夹内生成一个.md文件，接下来你可以参考markdown语法来生成自己的博客内容喽</p>
 <h4 id="主题美化"><a href="#主题美化" class="headerlink" title="主题美化"></a>主题美化</h4><p>  可以参考  <a href="https://hexo.io/themes/#blog" title="hexo主题" target="_blank" rel="external">官网</a> 提供的样式下载到本地，然后再_config.yml中设置下载theme即可(具体下载的主题的GitHub文档上有详细介绍我也急不多说了)</p>
 <p>  不得不说坑的确挺多，踩过才知道，还是那句话，纸上得来终觉浅 绝知此事要躬行，祝大家都有个自己的帅气的博客记录自己成长的点点滴滴；</p>
 
